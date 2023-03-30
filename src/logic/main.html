@@ -1,0 +1,13 @@
+<template>
+  <slot name="exports" $str="a" > </slot>
+
+  <script scope=".">
+    return function () {
+      let a = 1;
+      return {
+        a,
+   
+      };
+    };
+  </script>
+</template>

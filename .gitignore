@@ -1,0 +1,18 @@
+# 忽略 .DS_Store 文件
+.DS_Store
+
+# 忽略 node_modules 文件夹
+node_modules/
+
+# 忽略 build 和 dist 文件夹
+build/
+dist/
+
+# 忽略 本地 history 文件
+.history/
+
+# 忽略 .env.local 和 .env.development.local 文件
+.env.local
+.env.development.local
+
+.vscode
