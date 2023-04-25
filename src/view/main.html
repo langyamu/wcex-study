@@ -1,12 +1,16 @@
 <template>
   <link rel="stylesheet" href="../css/index.css" global="import" />
-
-  <script scope="monaco" src="monaco-editor"></script>
+  <div $>temp</div>
+ <section>
+  <cmpt-monaco type="data" $data="temp"></cmpt-monaco>
+ </section>
+  <!-- <script scope="monaco" src="monaco-editor"></script> -->
   <!-- <script scope="monaco" src="monaco"></script> -->
   <script scope=".">
     return class {
+      temp = {a:1}
       onReady() {
-        console.log(this.monaco);
+        // console.log(loader.require);
       }
     };
   </script>
