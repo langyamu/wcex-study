@@ -13,9 +13,11 @@
     "dayjs": "^1.11.7",
     "lodash": "^4.17.21",
     "monaco-editor": "^0.36.1",
-    "wcex": "^1.9.13"
+    "wcex": "^1.9.36"
   },
   "devDependencies": {
-    "@wcex/cli": "^1.8.3"
+    "@types/node": "^18.16.0",
+    "@wcex/cli": "^1.9.13",
+    "typescript": "^5.0.4"
   }
 }
