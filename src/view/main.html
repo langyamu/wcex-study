@@ -1,13 +1,12 @@
 <template>
   <link rel="stylesheet" href="../css/index.css" global="import" />
 
-  <script scope="monaco" src="monaco-editor"></script>
-  <!-- <script scope="monaco" src="monaco"></script> -->
-  <script scope=".">
-    return class {
-      onReady() {
-        console.log(this.monaco);
-      }
-    };
-  </script>
+
+  <editor-monaco $ed-value="$root.edValue"
+    @ed-before-create="edBeforeCreate($ev.detail)"
+    @ed-created="edCreated($ev.detail)"
+  ></editor-monaco>
+
+
+  <script scope="." src="."></script>
 </template>
