@@ -1,13 +1,18 @@
 import { Scope } from "wcex"
-let scope = new Scope()
 
-type TScope = typeof scope
+export default class extends Scope {
 
-export default function (){
+    edValue = "{}"
 
-    const onReady: TScope['onReady'] = ()=>{}
+    onCreate (){}
 
-    return {
-        onReady
+    onReady(){}
+
+    edBeforeCreate({}){
+        
     }
+    edCreated(){
+        
+    }
+
 }

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/lodash': ^4.14.194
   '@types/node': ^18.16.0
   '@wcex/cli': ^1.9.13
   '@wcex/monaco-fixed': ^0.36.2
@@ -18,6 +19,7 @@ dependencies:
   wcex: 1.9.36
 
 devDependencies:
+  '@types/lodash': 4.14.194
   '@types/node': 18.16.0
   '@wcex/cli': 1.9.13_gfpyv5b3h2oguybx3lu7z4el7a
   typescript: 5.0.4
@@ -121,6 +123,10 @@ packages:
 
   /@tsconfig/node16/1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@types/lodash/4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
     dev: true
 
   /@types/node/18.16.0:
