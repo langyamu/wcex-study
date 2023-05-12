@@ -1,0 +1,18 @@
+<template>
+  <link rel="stylesheet" href="../css/index.css" global="import" />
+
+  <style></style>
+
+  <!-- <script scope="test" src="../assets/test.json" nowatch nocall></script> -->
+  <!-- <script scope="test" $src="$path("../assets/test.json")"></script> -->
+
+  <script scope="test" src="../assets/test.js"></script>
+  <script scope=".">
+    return class {
+      onReady() {
+        // console.log("🚀 ~ file: main.html:15 ~ onReady ~ this:", JSON.parse(JSON.stringify(this.test)));
+        console.log(this.test)
+      }
+    };
+  </script>
+</template>

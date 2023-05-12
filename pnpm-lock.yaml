@@ -9,14 +9,14 @@ specifiers:
   lodash: ^4.17.21
   monaco-editor: ^0.36.1
   typescript: ^5.0.4
-  wcex: ^1.9.36
+  wcex: ^1.9.41
 
 dependencies:
   '@wcex/monaco-fixed': 0.36.2
   dayjs: 1.11.7
   lodash: 4.17.21
   monaco-editor: 0.36.1
-  wcex: 1.9.36
+  wcex: 1.9.41
 
 devDependencies:
   '@types/lodash': 4.14.194
@@ -1174,8 +1174,8 @@ packages:
       graceful-fs: 4.2.11
     dev: true
 
-  /wcex/1.9.36:
-    resolution: {integrity: sha512-yvF+jSnJsC1LZaOV+SDfBkE5vxDL6VpLckMe7a1ynt3JyyTHhn6/sxK1yhz3qQQKqwksv3Meus05FHGOtrLdOA==}
+  /wcex/1.9.41:
+    resolution: {integrity: sha512-4O54uTrGGXR/BshuhizF33tWm22MERZtKeVSJALS0ewldi2Jagtb5eJdszaSR5TzvbE6ho4TyIH7VZ2GFWUsYA==}
     dev: false
 
   /webidl-conversions/3.0.1:

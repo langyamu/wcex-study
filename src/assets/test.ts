@@ -1,0 +1,17 @@
+
+
+
+
+const exportJson = {
+    "productId": 1,
+    "productName": "A green door",
+    "price": 12.50,
+    "tags": [
+        "home",
+        "green"
+    ]
+}
+
+
+
+export default exportJson
