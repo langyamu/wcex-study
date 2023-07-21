@@ -1,18 +1,19 @@
 <template>
   <link rel="stylesheet" href="../css/index.css" global="import" />
-
+  <meta name="module" pkg="ajv" content="dist/ajv.js">
   <style></style>
 
-  <!-- <script scope="test" src="../assets/test.json" nowatch nocall></script> -->
-  <!-- <script scope="test" $src="$path("../assets/test.json")"></script> -->
 
-  <script scope="test" src="../assets/test.js"></script>
+  <script scope="Ajv" src="ajv"></script>
+
   <script scope=".">
     return class {
-      onReady() {
-        // console.log("🚀 ~ file: main.html:15 ~ onReady ~ this:", JSON.parse(JSON.stringify(this.test)));
-        console.log(this.test)
+      onCreate() {
+        
+        let ajv = new Ajv()
+
       }
+
     };
   </script>
 </template>

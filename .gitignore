@@ -9,7 +9,7 @@ build/
 dist/
 
 # 忽略 本地 history 文件
-.history/
+.history
 
 # 忽略 .env.local 和 .env.development.local 文件
 .env.local

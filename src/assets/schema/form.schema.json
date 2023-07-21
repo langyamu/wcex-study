@@ -1,0 +1,116 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$comment": "字典节点 schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "$comment": "节点唯一标识",
+            "type": "string",
+            "format": "uuid"
+        },
+        "name": {
+            "$comment": "节点名称",
+            "type": "string"
+        },
+        "type": {
+            "$comment": "节点类型",
+            "type": "string",
+            "enum": [
+                "字典",
+                "目录"
+            ]
+        },
+        "path": {
+            "$comment": "节点类型",
+            "type": "string"
+        },
+        "parentId": {
+            "$comment": "父节点唯一标识",
+            "type": [
+                "string",
+                "integer"
+            ],
+            "if": {
+                "type": "integer",
+                "const": 0
+            },
+            "else": {
+                "type": "string",
+                "format": "uuid"
+            }
+        },
+        "conf": {
+            "$comment": "字典节点配置",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "$comment": "字典类型",
+                    "type": "string",
+                    "enum": [
+                        "select",
+                        "checkbox",
+                        "radio",
+                        "text",
+                        "count"
+                    ]
+                },
+                "placeholder": {
+                    "type": "string",
+                    "enum": [
+                        "请选择",
+                        "0"
+                    ]
+                },
+                "multi": {
+                    "type": "boolean"
+                },
+                "chooselist": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "value": {
+                                "type": "string"
+                            },
+                            "label": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "dependentSchemas": {
+                "chooselist": {
+                    "properties": {
+                        "type": {
+                            "enum": [
+                                "select",
+                                "checkbox",
+                                "radio"
+                            ]
+                        }
+                    }
+                },
+                "type": {
+                    "if": {
+                        "enum": [
+                            "select",
+                            "checkbox",
+                            "radio"
+                        ],
+                        "required": [
+                            "chooselist"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "type",
+        "path",
+        "parentId"
+    ]
+}

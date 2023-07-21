@@ -1,0 +1,11 @@
+{
+    "$schema": "./form.schema.json",
+    "id":"123123",
+    "name": "test",
+    "type": "字典",
+    "path": "/1/2/3/4/",
+    "parentId": "123123123",
+    "conf": {
+        "type": "select"
+    }
+}

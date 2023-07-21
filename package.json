@@ -10,14 +10,16 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@wcex/monaco-fixed": "^0.36.2",
+    "ajv": "^8.12.0",
+    "axios": "^1.4.0",
     "dayjs": "^1.11.7",
-    "lodash": "^4.17.21",
-    "monaco-editor": "^0.36.1",
-    "wcex": "^1.9.41"
+    "lodash.debounce": "^4.0.8",
+    "monaco-editor": "^0.38.0",
+    "wcex": "^1.9.41",
+    "webdav": "5.0.0-r3"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.194",
+    "@types/lodash.debounce": "^4.0.7",
     "@types/node": "^18.16.0",
     "@wcex/cli": "^1.9.13",
     "typescript": "^5.0.4"
