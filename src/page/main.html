@@ -1,18 +1,62 @@
 <template>
   <link rel="stylesheet" href="../css/index.css" global="import" />
 
-  <style></style>
+  <meta pkg="@hufe921/canvas-editor" />
 
-  <!-- <script scope="test" src="../assets/test.json" nowatch nocall></script> -->
-  <!-- <script scope="test" $src="$path("../assets/test.json")"></script> -->
+  <style>
+    :host,
+    .container {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
-  <script scope="test" src="../assets/test.js"></script>
-  <script scope=".">
-    return class {
-      onReady() {
-        // console.log("🚀 ~ file: main.html:15 ~ onReady ~ this:", JSON.parse(JSON.stringify(this.test)));
-        console.log(this.test)
-      }
-    };
-  </script>
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .left,
+    .right {
+      height: 100%;
+      background-color: "$$color.bg";
+    }
+
+    .main {
+      box-sizing: border-box;
+      background-color: "$$color.bg";
+      margin: 0 1em;
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+    }
+
+    .editor-container {
+      width: max-content;
+    }
+  </style>
+
+
+  <div class="container">
+    <div class="left">
+
+    </div>
+    <div class="main">
+      <div class="toolbar">
+        <button $for(btn)="toolbarBtnList" $title="btn.title" @click.stop="onClick_toolbarBtn.call($root,btn.id,btn)"
+          $>btn.label</button>
+      </div>
+      <div class="editor-container">
+        <div id="editor" style="width: max-content;"></div>
+      </div>
+    </div>
+    <div class="right">
+
+    </div>
+  </div>
+
+
+
+  <script scope="." src="."></script>
 </template>

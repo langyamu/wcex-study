@@ -1,23 +1,20 @@
 {
   "name": "wcex-study",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "wcex -p 9527 === http://localhost:9527"
+    "start": "wcex -p 9529 === http://localhost:9529"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@wcex/monaco-fixed": "^0.36.2",
-    "dayjs": "^1.11.7",
+    "@hufe921/canvas-editor": "^0.9.39",
     "lodash": "^4.17.21",
-    "monaco-editor": "^0.36.1",
-    "wcex": "^1.9.41"
+    "wcex": "^1.9.58"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.194",
     "@types/node": "^18.16.0",
     "@wcex/cli": "^1.9.13",
     "typescript": "^5.0.4"
