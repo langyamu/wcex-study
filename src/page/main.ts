@@ -1,5 +1,4 @@
 import { Scope } from "wcex";
-// @ts-ignore
 import Editor, { IElement, RowFlex, Command, EditorMode, IEditorData, ElementType, TableBorder } from "@hufe921/canvas-editor"
 
 
@@ -95,11 +94,11 @@ export default class extends Scope {
 
     onReady(): void {
 
-        console.log(this.$rootElem)
+        console.log(this.$rootElem) // 当前元素的 shadowRoot
 
         this.$rootElem.shadowRoot?.appendChild(document.getElementById('canvas-editor-style') as Node)
 
-        const editor_dom = this.$id.editor
+        const editor_dom = this.$id.editor // 通过 id 获取 元素
 
         /**
          * @note
@@ -155,6 +154,7 @@ export default class extends Scope {
 
 
 
+        // noWatch 不做响应式转换
         this.editor_ins = this.$noWatch(new Editor((editor_dom as HTMLDivElement), editor_data2, {
             // placeholder: ''
             pageNumber: {
