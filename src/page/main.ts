@@ -95,7 +95,6 @@ export default class extends Scope {
 
     onReady(): void {
 
-        console.log(Editor)
         console.log(this.$rootElem)
 
         this.$rootElem.shadowRoot?.appendChild(document.getElementById('canvas-editor-style') as Node)
